@@ -4,7 +4,6 @@
 
 import "./App.css";
 import { React, useState } from "react";
-import DarkMode from "./component/Darkmode";
 function App() {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -114,7 +113,7 @@ function App() {
             required
           />
           <label htmlFor="gender">Gender*</label>
-          <input
+          <input  
             type="radio"
             name="gender"
             value="male"
@@ -245,8 +244,6 @@ function App() {
           <p>About: {submittedData.about}</p>
         </div>
       )}
-        
-      <DarkMode /> {/* Use the DarkMode component */}
     </div>
   );
 }
